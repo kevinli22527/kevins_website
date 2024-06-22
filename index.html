@@ -1,52 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kevin Li</title>
+    <title>Kevin Li - About</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <h1>Kevin Li</h1>
-        <p>Performance Engineer | Tea Enjoyer | Science Fiction Savant</p>
+        <p style="margin: 0; text-align: center">Personal Project Portfolio</p>
     </header>
-
-    <div class="container">
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hello! I'm Kevin Li! I work as a performance engineer at Arm, developing tooling and automation for fine-tuning the next generation of Arm servers!</p>
-        </section>
-
-        <section id="projects">
-            <h2>Personal Projects</h2>
-            <div class="project">
-                <h3>Getting Good at Starcraft</h3>
-                <p>I am currently working on getting good at Starcraft.</p>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#resume">Resume</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="grid-container">
+            <div class="left-col">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>Hello! My name is Kevin Li! I work as a Performance Engineer at Arm down in Austin, TX. I graduated from the University of Texas at Austin
+                        with a bachelor's degree in Electrical and Computer Engineering, focusing specifically on software engineering.
+                    </p>
+                    <p>Outside of work, I enjoy playing racquet sports (especially tennis and pickleball), maintaining my garden of mint plants, and exploring new places.
+                        I'm a huge sci-fi fan, especially when it comes to Star Wars and Star Trek, but I also have watched shows such as
+                        <em>The Expanse</em> and <em>Lost in Space</em>. Recently, some friends have even gotten me into playing
+                        <em>Starcraft</em> - I'm always ready for a matchup!
+                    </p>
+                    <p>Thank you for checking out my website! Feel free to contact me if you have any questions!</p>
+                    <br><br>
+                </section>
+                <section id="resume">
+                    <h2>Resume</h2>
+                    <p>
+                        Download my resume:
+                        <a href="resources\SWE_FS_resume.pdf" download> Resume (PDF)</a>
+                    </p>
+                    <p>
+                        Or, view it in your web browser!
+                        <button onclick="location.href='resume.html'">Click to View</button>
+                    </p>
+                    <br>
+                </section>
             </div>
-            <div class="project">
-                <h3>This website.</h3>
-                <p>Enough said.</p>
+            <div class="right-col">
+                <img src="resources/arm_linkedin.png" class="pfp" alt="Kevin Li">
             </div>
-        </section>
-
-        <section id="resume">
-            <h2>Resume</h2>
-            <div class="job">
-                <h3>Performance Engineer at TechCorp</h3>
-                <p>Jan 2020 - Present</p>
-                <p>Responsible for benchmarking server performance, optimizing systems, and leading a team of engineers in various performance-related projects.</p>
+        </div>
+        <br><br><br>
+        <h2 style="text-align: center; font-size: 48px; text-decoration: underline">My Projects</h2>
+        <p style="text-align: center; font-size: 24px">Click on the image to learn more!</p>
+        <br><br>
+        <div class="grid-container-project" id="projects">
+            <div class="grid-item">
+              <img src="resources/leetcode.png" alt="Robot" width="300" height="300" onclick="location.href='projects.html#LeetcodeProfile'">
+              <div class="caption">Leetcode Profile</div>
             </div>
-            <div class="job">
-                <h3>Systems Administrator at WebSolutions</h3>
-                <p>Jun 2015 - Dec 2019</p>
-                <p>Managed Linux servers, automated tasks using Ansible, and ensured system security and efficiency through proactive maintenance and monitoring.</p>
+            <div class="grid-item">
+              <img src="resources/www.jpg" alt="Robot" width="300" height="300" onclick="location.href='projects.html#Website'">
+              <div class="caption">Personal Website</div>
             </div>
-        </section>
-    </div>
-
-    <footer>
-        <p>&copy; 2024 Kevin Li. All rights reserved.</p>
-    </footer>
+        </div>
+    </main>
+    <br><br><br>
+        <footer>
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p style="text-align: center;">Feel free to contact me if you have any questions.</p>
+                <p style="text-align: center;">Email: kevin.li.actual@gmail.com</p>
+                <p style="text-align: center;">Phone: 281-728-8334</p>
+            </section>    
+        </footer>
 </body>
 </html>
