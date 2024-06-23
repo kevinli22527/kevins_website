@@ -21,11 +21,6 @@ header {
     font-weight: bold;
 }
 
-.header-with-padding {
-    padding-left: 20px;
-    padding-top: 20px;
-}
-
 h1 {
     margin: 0;
     padding-left: 0;
@@ -121,29 +116,6 @@ button:hover {
     margin: auto;
 }
 
-.image-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 60px;
-    width: 100%;
-    height: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-.image-grid img {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 5%;
-    border: 2px solid #383d3b;
-  }
-
 footer {
     background-color: #383d3b;
     color: #b0f6ff;
@@ -166,22 +138,22 @@ footer h2 {
   }
 
 .left-col {
-grid-column: 1;
-margin: 10px;
+    grid-column: 1;
+    margin: 10px;
 }
 
 .right-col {
-grid-column: 2;
-display: flex;
-justify-content: center;
-align-items: center;
+    grid-column: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }  
-  
+
 .left-col1 {
-grid-column: 1;
-margin: 10px;
-position: relative;
-top: 33%;
+    grid-column: 1;
+    margin: 10px;
+    position: relative;
+    top: 33%;
 }
 
 .right-col1 {
@@ -205,34 +177,6 @@ top: 33%;
     top: 33%;
 }
 
-.left-col3 {
-    grid-column: 1;
-    margin: 10px;
-    position: relative;
-    top: 5%;
-}
-    
-.right-col3 {
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left-col-4 {
-    grid-column: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-}
-
-.right-col-4 {
-    grid-column: 2;
-    margin: 10px;
-    position: relative;
-    top: 5%;
-}
-
 .pfp {
     width: 400px;
     height: 400px;
@@ -253,44 +197,24 @@ top: 33%;
     background-color: #ffffff;
 }
 
-.pic2 {
-    border-radius: 5%;
-    border: 2px solid #383d3b;
-    box-shadow: 3px 3px 3px #383d3b;
-    position: relative;
-    background-color: #ffffff;
-}
-
-.project2 {
+.project {
     border: none;
     padding: 20px;
     color: #383d3b;
     max-width: 1400px;
 }
 
-.project2 h3 {
+.project h3 {
     margin-top: 0;
     font-size: 24px;
     text-align: center;
 }
 
-.project2 p {
+.project p {
     margin: 0;
     text-align: center;
 }
 
 p {
     text-align: justify;
-}
-
-.easter-egg-link {
-    color: #f0fdff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.2s ease-in-out;
-}
-
-.if-clicked {
-    color: #f0fdff;
-    text-decoration: none;
 }
